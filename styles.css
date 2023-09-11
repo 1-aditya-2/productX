@@ -1,0 +1,358 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(46, 11, 46);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(46, 11, 46);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* align-items: center; */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 12px;
+
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* .nav-links.active{
+    display:block;
+} */
+
+.nav-links li {
+    font-size: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(116, 116, 116);
+}
+/* Hero section styles */
+.hero {
+    background-image: url('./public/leaf.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgb(46, 11, 46);
+}
+
+/* Features section styles */
+.features {
+    background-color: #fff;
+    margin: 40px 40px 0 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.features h2 {
+    font-size: 30px;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 40px;
+    color: rgb(46, 11, 46);
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feature img {
+    width: 30%;
+    height: 30%;
+    /* margin-bottom: px; */
+}
+
+.feature h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Pricing section styles */
+.pricing {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    color: rgb(46, 11, 46);
+}
+
+.price-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price-card p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-card ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #fff;
+    padding: 20px 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin:40px;
+    margin-top: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(46, 11, 46);
+}
+
+.contact form {
+    text-align: center;
+    margin:0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color:rgb(46, 11, 46);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(46, 11, 46);
+    color: #fff;
+}
+.hidden{
+    display: block;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e8c9ec;
+    border: 1px solid #440f4e;
+    color: #410e4b;
+    border-radius: 5px;
+    display:block;
+}
+
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0px 0;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(46, 11, 46);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .logo{
+        float:left;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display:block;
+        justify-content: flex-end;
+        padding-left: 300px;
+
+    }
+    .nav-links{
+        background-color: black;
+        margin:20px;
+        border-radius: 5px;;
+    }
+
+    .nav-links li {
+        font-size: 18px;
+        padding:10px 15px;
+        border-radius: 5px;
+        background-color: rgb(46, 11, 46);
+        margin:5px;
+    }
+
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .feature img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .pricing {
+        padding: 60px 0;
+    }
+
+    .price-card {
+        margin: 10px;
+    }
+
+    .price-card h3 {
+        font-size: 20px;
+    }
+
+    .price-card p {
+        font-size: 18px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+}
+
